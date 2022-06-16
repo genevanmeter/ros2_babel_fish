@@ -4,6 +4,7 @@
 #ifndef ROS2_BABEL_FISH_BABEL_FISH_HPP
 #define ROS2_BABEL_FISH_BABEL_FISH_HPP
 
+
 #include "ros2_babel_fish/idl/type_support_provider.hpp"
 #include "ros2_babel_fish/detail/babel_fish_action_client.hpp"
 #include "ros2_babel_fish/detail/babel_fish_publisher.hpp"
@@ -14,6 +15,7 @@
 #include "ros2_babel_fish/messages/compound_message.hpp"
 #include "ros2_babel_fish/messages/value_message.hpp"
 
+#include <rclcpp/version.h>
 #include <rclcpp/node.hpp>
 
 namespace ros2_babel_fish

@@ -4,6 +4,8 @@
 #ifndef ROS2_BABEL_FISH_MESSAGE_DESCRIPTION_H
 #define ROS2_BABEL_FISH_MESSAGE_DESCRIPTION_H
 
+#include <string>
+
 #include <rosidl_runtime_c/message_type_support_struct.h>
 #include <rosidl_runtime_c/service_type_support_struct.h>
 #include <rosidl_runtime_c/action_type_support_struct.h>

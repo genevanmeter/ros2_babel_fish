@@ -165,6 +165,13 @@ void BabelFishSubscription::handle_loaned_message( void *loaned_message, const r
   (void) message_info;
 }
 
+void BabelFishSubscription::handle_serialized_message(const std::shared_ptr<rclcpp::SerializedMessage> & message, const rclcpp::MessageInfo & message_info)
+{
+  // Not handled
+  (void) message;
+  (void) message_info;
+}
+
 void BabelFishSubscription::return_message( std::shared_ptr<void> &message )
 {
   auto typed_message = std::static_pointer_cast<rclcpp::SerializedMessage>( message );

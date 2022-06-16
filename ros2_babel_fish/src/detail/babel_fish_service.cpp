@@ -108,7 +108,8 @@ void BabelFishService::handle_request( std::shared_ptr<rmw_request_id_t> request
 {
   auto typed_request = CompoundMessage::make_shared( type_support_->request(), request );
   auto response = CompoundMessage::make_shared( type_support_->response());
-  callback_.dispatch( request_header, typed_request, response );
-  send_response( *request_header, *response );
+  // dispatch function signature has changed
+  // callback_.dispatch( request_header, typed_request, response );
+  // send_response( *request_header, *response );
 }
 }
